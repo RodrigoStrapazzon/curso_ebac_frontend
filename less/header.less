@@ -1,0 +1,26 @@
+// less/header.less
+@import "variables.less";
+@import "mixins.less";
+
+header {
+    background-color: @primary-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .container {
+        .flex-center();
+        padding: @container-padding 0;
+    }
+}
+
+.menu {
+    display: flex;
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
